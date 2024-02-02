@@ -1,0 +1,154 @@
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1440px; width: 1440px; height: 900px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+
+#page_homepage_ek1 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 900px;
+}
+
+#_bg__homepage_ek2 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 900px;
+	background:rgba(245,160,92,1);
+}
+
+#bg_shape {
+	top: -258px;
+	left: 393px;
+	width: 1624px;
+	height: 1326px;
+}
+
+#_bg__bg_shape_ek1 {
+	top: 258px;
+	left: -393px;
+	width: 1624px;
+	height: 1326px;
+	
+}
+
+
+#vector_1 {
+	top: 258px;
+	left: 251px;
+	width: 796.48px;
+	height: 900px;
+}
+
+
+#vector_2 {
+	top: 258px;
+	left: 0px;
+	width: 1440px;
+	height: 900px;
+}
+
+
+#photo_bg {
+	top: 220px;
+	right: 150px;
+	width: 450px;
+	height: 420px;
+	transform:rotate(-5.47deg);
+	background:rgba(68,161,160,1);
+}
+
+
+#photo {
+	top: 199.67px;
+	left: 816px;
+	width: 500px;
+	height: 500px;
+}
+
+
+#hi__i_m_alex {
+	top: 311.67px;
+	left: 120px;
+	width: 374.4px;
+	height: 94.4px;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 54px;
+	text-align: left;
+	color:#021718;
+}
+
+
+#i_design_beautiful_websites___mobile_apps_that_modern_trends_demand {
+	top: 410.67px;
+	left: 120px;
+	width: 437.4px;
+	height: 91.4px;
+	overflow: hidden;
+	font-family: 'Roboto', sans-serif;
+	opacity: 0.85;
+	font-size: 26px;
+	text-align: left;
+	line-height: 42px;
+	margin-top: -6px;
+	height: 115.4px;
+	color:#021718;
+}
+
+#button {
+	top: 526.67px;
+	left: 120px;
+	width: 196px;
+	height: 60px;
+}
+
+#_bg__button_ek1 {
+	top: -527px;
+	left: -120px;
+	width: 196px;
+	height: 60px;
+	
+}
+
+
+#rectangle_8 {
+	top: 0px;
+	left: 0px;
+	width: 196px;
+	height: 60px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background:rgba(1,132,127,1);
+}
+
+
+#contact_me {
+	top: 9px;
+	left: 36px;
+	width: 143.4px;
+	height: 49.4px;
+	overflow: hidden;
+	font-family: Roboto;
+	font-size: 24px;
+	text-align: left;
+	line-height: 42px;
+	margin-top: -1px;
+	height: 73.4px;
+	color:#FFFFFA;
+}
+
+
+
+
