@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .required-star {
+            color: red;
+        }
+    </style>
+    <script>
+        function showPopup() {
+            var popup = document.getElementById('popup');
+            var container = document.getElementsByClassName('container')[0];
+            popup.style.display = 'block';
+            container.style.filter = 'blur(8px)';
+        }
+
+        function closePopup() {
+            var popup = document.getElementById('popup');
+            var container = document.getElementsByClassName('container')[0];
+            popup.style.display = 'none';
+            container.style.filter = 'none';
+        }
+    </script>
+</head>
+<body>
+    <!-- Your form goes here -->
+    <form name="myForm" onsubmit="showPopup()" method="post">
+        <div class="container">
+            <label for="email"><b>Email <span class="required-star">*</span></b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password <span class="required-star">*</span></b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+        </div>
+    </form>
+    <div id="popup" class="popup">
+        <h2>Logged in successfully 🎉</h2>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</body>
+</html>

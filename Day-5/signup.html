@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .required-star {
+            color: red;
+        }
+        .error {
+            color: red;
+            display: none;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var username = document.forms["myForm"]["username"].value;
+            var password = document.forms["myForm"]["psw"].value;
+            var confirmPassword = document.forms["myForm"]["psw-confirm"].value;
+
+            // Check if username is lowercase
+            if (username != username.toLowerCase()) {
+                document.getElementById('username-error').style.display = 'block';
+                return false;
+            }
+
+            // Check if password is between 8 and 16 characters long
+            if (password.length < 8 || password.length > 16) {
+                document.getElementById('password-length-error').style.display = 'block';
+                return false;
+            }
+
+            // Check if password contains at least one uppercase letter, one lowercase letter, and one special character
+            var upperCaseLetters = /[A-Z]/g;
+            var lowerCaseLetters = /[a-z]/g;
+            var specialCharacters = /[!@#$%^&*(),.?":{}|<>]/g;
+            if (!password.match(upperCaseLetters) || !password.match(lowerCaseLetters) || !password.match(specialCharacters)) {
+                document.getElementById('password-char-error').style.display = 'block';
+                return false;
+            }
+
+            // Check if password and confirm password are the same
+            if (password != confirmPassword) {
+                document.getElementById('password-match-error').style.display = 'block';
+                return false;
+            }
+
+            // If all validations pass, show the popup
+            showPopup();
+        }
+
+        function showPopup() {
+            var popup = document.getElementById('popup');
+            var container = document.getElementsByClassName('container')[0];
+            popup.style.display = 'block';
+            container.style.filter = 'blur(8px)';
+        }
+
+        function closePopup() {
+            var popup = document.getElementById('popup');
+            var container = document.getElementsByClassName('container')[0];
+            popup.style.display = 'none';
+            container.style.filter = 'none';
+        }
+    </script>
+</head>
+<body>
+    <!-- Your form goes here -->
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="container">
+            <label for="email"><b>Email <span class="required-star">*</span></b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="username"><b>Username <span class="required-star">*</span></b></label>
+            <input type="text" placeholder="Create Username" name="username" required>
+            <div id="username-error" class="error">Username must be in lowercase</div>
+
+            <label for="psw"><b>Password <span class="required-star">*</span></b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <div id="password-length-error" class="error">Password must be between 8 and 16 characters</div>
+            <div id="password-char-error" class="error">Password must contain at least one uppercase letter, one lowercase letter, and one special character</div>
+
+            <label for="psw-confirm"><b>Confirm Password <span class="required-star">*</span></b></label>
+            <input type="password" placeholder="Confirm Password" name="psw-confirm" required>
+            <div id="password-match-error" class="error">Passwords do not match</div>
+
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+    <div id="popup" class="popup">
+        <h2>Account created 😊</h2>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</body>
+</html>

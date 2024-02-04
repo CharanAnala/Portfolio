@@ -149,6 +149,31 @@ div { position: absolute; }
 	color:#FFFFFA;
 }
 
-
+@media (max-width: 768px) {
+	/* Change the font size of the title and the subtitle */
+	#hi__i_m_alex {
+	  font-size: 24px;
+	}
+  
+	#i_design_beautiful_websites___mobile_apps_that_modern_trends_demand {
+	  font-size: 16px;
+	}
+  
+	/* Change the image size of the photo and the vectors */
+	#photo {
+	  width: 200px;
+	  height: 200px;
+	}
+  
+	#vector_1 {
+	  width: 100px;
+	  height: 100px;
+	}
+  
+	#vector_2 {
+	  width: 100px;
+	  height: 100px;
+	}
+  }
 
 

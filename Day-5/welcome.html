@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100%;
+        }
+        .img{
+            background-image: url("19362653.jpg");
+            width: 50%;
+            height: 100vh;
+            background-size: cover;
+        }
+        .welcome{
+            font-family: sans-serif;
+            font-weight: 900;
+            font-size: 124px;
+            margin-left: 25px;
+            margin-top: 250px;
+        }
+        
+        button {
+            width: 15vw;
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 11px;
+        }
+        .con{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            flex-direction: column;
+        }
+        .flex{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="con"><h1 class="welcome">Welcome!</h1>
+        <div class="flex">
+        <button onclick="location.href='login.html'">Login</button>
+        <button onclick="location.href='signup.html'">Sign Up</button>
+        </div>
+        </div>
+        <div class="img"></div>
+
+    
+</body>
+</html>

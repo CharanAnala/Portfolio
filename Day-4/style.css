@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+div {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a73e8;
+}
+
+p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+#result,
+#sumResult,
+#convertedText,
+#multiplesResult,
+#primeResult,
+#fibonacciSeriesResult,
+#palindromeResult {
+    color: #4285f4;
+    font-weight: bold;
+}

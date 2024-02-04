@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisibility Checker</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  <!-- head -->
+  <h1>Day-4</h1>
+
+  <!-- Divisibility -->
+  <div>
+    <h1>Divisibility Checker</h1>
+    
+    <label for="numberInput">Enter a number:</label>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+
+    <button onclick="checkDivisibility()">Check Divisibility</button>
+
+    <p id="result"></p>
+    <script defer src="divisibility.js"></script>
+  </div>
+    
+    <!-- SUM -->
+  <div>
+    <h1>Sum Calculator</h1>
+    
+    <label for="nInput">Enter the value of n:</label>
+    <input type="number" id="nInput" placeholder="Enter n">
+
+    <button onclick="calculateSum()">Calculate Sum</button>
+
+    <p id="sumResult"></p>
+
+    <script type="text/javascript" src="sum.js"> </script>
+</div>
+
+<!-- convert -->
+<div>
+  <h1>Text Converter</h1>
+    
+  <label for="textInput">Enter text:</label>
+  <textarea placeholder="Enter the Text Here..." id="textInput"></textarea><br>
+  
+  <button onclick="convertToUppercase()">Convert to Uppercase</button>
+
+  <p id="convertedText"></p>
+
+  <script type="text/javascript" src="convert.js"> </script>
+</div>
+
+<!-- check whether a,b are multiples of c -->
+<div>
+  <h1>Multiples Checker</h1>
+    
+  <label for="numberA">Enter the value of a:</label>
+  <input type="number" id="numberA" placeholder="Enter a">
+
+  <label for="numberB">Enter the value of b:</label>
+  <input type="number" id="numberB" placeholder="Enter b">
+
+  <label for="numberC">Enter the value of c:</label>
+  <input type="number" id="numberC" placeholder="Enter c">
+
+  <button onclick="checkMultiples()">Check Multiples</button>
+
+  <p id="multiplesResult"></p>
+
+  <script type="text/javascript" src="multiples.js"></script>
+</div>
+
+<!-- number is prime or not -->
+
+<div>
+  <h1>Prime Number Checker</h1>
+    
+  <label for="numberToCheck">Enter a number:</label>
+  <input type="number" id="numberToCheck" placeholder="Enter a number">
+
+  <button onclick="checkPrime()">Check Prime</button>
+
+  <p id="primeResult"></p>
+  
+  <script type="text/javascript" src="prime.js"></script>
+
+<!--  Fibonacci series up to n numbers -->
+
+<div>
+  <h1>Fibonacci Series Generator</h1>
+    
+  <label for="numOfTerms">Enter the number of terms:</label>
+  <input type="number" id="numOfTerms" placeholder="Enter the number of terms">
+
+  <button onclick="generateFibonacciSeries()">Generate Fibonacci Series</button>
+
+  <p id="fibonacciSeriesResult"></p>
+  
+  <script type="text/javascript" src="fibonacci.js"></script>
+</div>
+
+<!-- checkPalindrome -->
+<div>
+  <h1>Palindrome Checker</h1>
+    
+  <label for="inputString">Enter a string:</label>
+  <input type="text" id="inputString" placeholder="Enter a string">
+
+  <button onclick="checkPalindrome()">Check Palindrome</button>
+
+  <p id="palindromeResult"></p>
+  
+  <script type="text/javascript" src="palindrome.js"></script>
+</div>
+
+</body>
+</html>
