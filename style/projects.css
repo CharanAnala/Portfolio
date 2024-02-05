@@ -48,6 +48,8 @@
     
   }
 
+  
+
   /* Add active class to the current day */
   .days div.active {
     background-color: #AC3864;
